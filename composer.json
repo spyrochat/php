@@ -1,0 +1,5 @@
+{
+    "require": {
+        "dconco/phpspa": "v2.0.5.x-dev"
+    }
+}
