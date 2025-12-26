@@ -10,11 +10,12 @@ $data = [
    'name' => 'Dave'
 ];
 
-$response = baseFetch("/notify")->post($data);
+// $response = baseFetch("/notify")->post($data);
 
-if ($response->failed())
-   Response::sendError($response->error(), Response::StatusInternalServerError);
+// if ($response->failed())
+//    Response::sendError($response->error(), Response::StatusInternalServerError);
 
-$data = $response->json();
+// $data = $response->json();
+
 
 var_dump($data);

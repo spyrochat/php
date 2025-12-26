@@ -18,7 +18,7 @@ function baseFetch(string $path): PendingRequest
 	      'Authorization' => $secret,
 	      'Content-Type' => 'application/json'
 	   ])
-		//->unixSocketPath($sockPath)
+		//->unixSocket($sockPath)
 		->connectTimeout(2)
 		->timeout(2);
 
