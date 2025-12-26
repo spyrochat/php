@@ -13,7 +13,7 @@ function baseFetch(string $path): PendingRequest
 	$sockPath = dirname(__DIR__, 2) . '/spyrochat.sock';
    $secret = "Bearer $secret";
 
-	$response = useFetch("http://localhost:8000$path")
+	$response = useFetch("http://172.30.48.1:8000/api$path")
 	   ->headers([
 	      'Authorization' => $secret,
 	      'Content-Type' => 'application/json'
